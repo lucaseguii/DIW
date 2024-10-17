@@ -194,7 +194,7 @@ main {
 
 .card {
     background-color: #e0f7fa; 
-    border: 1px solid #ddd;
+    border: 1px solid #FFFEFE;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
@@ -207,14 +207,14 @@ main {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: #333;
+    color: #333333;
     margin-bottom: 15px;
 }
 
 .card p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px; 
-    color: #555;
+    color: #333333;
     margin-bottom: 20px;
 }
 
@@ -378,7 +378,7 @@ footer {
 
     .card {
         background-color: #e0f7fa; 
-        border: 1px solid #ddd; 
+        border: 1px solid #FFFEEF; 
         border-radius: 5px; 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         padding: 20px; 

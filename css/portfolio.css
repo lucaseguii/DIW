@@ -48,6 +48,21 @@ header {
 .logo img {
     height: 80px;
 }
+.login-button {
+    background-color: #38AECC;    
+    color: #FFFEFE;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.login-button:hover {
+    background-color: #38aeccda;
+}
 
 .menu {
     position: fixed; 
@@ -174,6 +189,49 @@ main {
 }
 
 @media (min-width: 600px) {
+    header {
+        height: 180px;
+    }
+
+    .header-top {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 5px 50px; 
+    }
+
+    .logo {
+        padding-top: 10px;
+        margin-left: 0;
+        flex-grow: 1; 
+    }
+
+    .logo img {
+        height: 100px; 
+    }
+
+    h1 {
+        font-size: 30px; 
+        margin: 0; 
+        flex-grow: 2; 
+        display: flex; 
+        align-items: center; 
+        text-align: center; 
+        padding: 5px 0; 
+    }
+
+    .login-button {
+        margin-left: auto; 
+        padding: 10px 20px; 
+        font-size: 14px; 
+        display: flex; 
+        align-items: center; 
+        text-decoration: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
     .menu {
         position: relative; 
         height: auto;
@@ -235,7 +293,7 @@ main {
     .portfolio-item p {
         margin-top: 5px; 
         font-size: 12px; 
-        color: #333; 
+        color: #333333; 
         font-family: Arial, sans-serif; 
         padding: 0 10px; 
     }
