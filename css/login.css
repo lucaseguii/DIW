@@ -215,7 +215,7 @@ h1 {
 .login-form input {
     margin-bottom: 20px; 
     padding: 10px;
-    border: 1px solid #ccc; 
+    border: 1px solid #333333; 
     border-radius: 5px; 
     width: calc(100% - 22px); 
 }
