@@ -261,6 +261,50 @@ footer {
 
 
 @media (min-width: 600px) {
+    header {
+        height: 180px;
+    }
+
+    .header-top {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 5px 50px; 
+    }
+
+    .logo {
+        padding-top: 10px;
+        margin-left: 0;
+        flex-grow: 1; 
+    }
+
+    .logo img {
+        height: 100px; 
+    }
+
+    h1 {
+        font-size: 30px; 
+        margin: 0; 
+        flex-grow: 2; 
+        display: flex; 
+        align-items: center; 
+        text-align: center; 
+        padding: 5px 0; 
+    }
+
+    .login-button {
+        margin-left: auto; 
+        padding: 10px 20px; 
+        font-size: 14px; 
+        display: flex; 
+        align-items: center; 
+        text-decoration: none;
+        justify-content: space-around;
+    }
+
+    .menu-icon {
+        display: none;
+    }
     .menu {
         position: relative; 
         height: auto;
