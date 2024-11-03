@@ -276,19 +276,6 @@ main {
   min-height: calc(100vh - 200px);
 }
 
-.sketchfab-embed-wrapper iframe {
-  width: 90%;
-  max-width: 600px;
-  height: 300px;
-  margin: 0 auto;
-  display: block;
-}
-
-.image-container {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .info-section {
   display: flex;
   flex-wrap: wrap;
@@ -305,6 +292,7 @@ main {
   padding: 25px;
   width: 360px;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 .card h2 {
@@ -322,92 +310,26 @@ main {
   margin-bottom: 20px;
 }
 
-.card a {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #333333;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.card a:hover {
-  text-decoration: underline;
-}
-
-.portfolio-image {
+.card img {
   width: 100%;
   height: auto;
   border-radius: 5px;
   margin-bottom: 15px;
 }
 
-.imageno, .textno {
-  display: none;
+.card:hover {
+  transform: translateY(-5px);
 }
 
 @media (min-width: 600px) {
-  .sketchfab-embed-wrapper iframe {
-    width: 100%;
-    height: 800px;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  .image-container {
-    margin-bottom: 110px;
-    text-align: center;
-  }
-  .info-section {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .card {
-    background-color: #e0f7fa;
-    border: 1px solid #FFFEFE;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px 0;
     width: 90%;
     max-width: 1200px;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-    text-align: center;
-  }
-  .card:hover {
-    transform: translateY(-5px);
+    margin: 10px 0;
   }
   .info-section .card img {
     max-width: 40%;
     height: auto;
-    display: block;
     margin: 0 auto;
   }
-  .card .leer-mas {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00796b;
-    color: #FFFEFE;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  .card .leer-mas:hover {
-    background-color: #004d40;
-  }
-  .imageno, .textno {
-    display: block;
-  }
-  main {
-    min-height: calc(100vh - 150px);
-    padding-bottom: 100px;
-    box-sizing: border-box;
-  }
-  .card:last-child {
-    display: none;
-  }
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=altresacts.css.map */

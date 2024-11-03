@@ -138,6 +138,7 @@ h1 {
 
 .submenu li {
     margin: 5px 0; 
+    
 }
 
 .submenu li a {
@@ -363,7 +364,6 @@ footer {
         max-width: 1400px; 
         margin: 0 auto; 
     }
-
     .image-container {
         margin-bottom: 110px; 
         text-align: center; 

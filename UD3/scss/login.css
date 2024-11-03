@@ -270,144 +270,49 @@ h1 {
     display: none;
   }
 }
-main {
-  background-color: #d2eef5;
-  padding: 20px;
-  min-height: calc(100vh - 200px);
-}
-
-.sketchfab-embed-wrapper iframe {
-  width: 90%;
-  max-width: 600px;
-  height: 300px;
-  margin: 0 auto;
-  display: block;
-}
-
-.image-container {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.info-section {
+.login-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  margin: 40px 0;
+  align-items: center;
+  height: calc(100vh - 100px);
+  padding: 20px;
+  background-color: #d2eef5;
 }
 
-.card {
-  background-color: #e0f7fa;
-  border: 1px solid #FFFEFE;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  padding: 25px;
-  width: 360px;
-  text-align: center;
-}
-
-.card h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: #333333;
-  margin-bottom: 15px;
-}
-
-.card p {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  margin-bottom: 20px;
-}
-
-.card a {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #333333;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.card a:hover {
-  text-decoration: underline;
-}
-
-.portfolio-image {
+.login-form {
+  background-color: #FFFEFE;
+  border: 2px solid #38AECC;
+  border-radius: 10px;
+  padding: 90px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: auto;
+  max-width: 400px;
+}
+.login-form h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.login-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.login-form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #333333;
   border-radius: 5px;
-  margin-bottom: 15px;
+  width: calc(100% - 22px);
 }
-
-.imageno, .textno {
-  display: none;
+.login-form input[type=email], .login-form input[type=password] {
+  width: calc(100% + 10px);
 }
-
-@media (min-width: 600px) {
-  .sketchfab-embed-wrapper iframe {
-    width: 100%;
-    height: 800px;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  .image-container {
-    margin-bottom: 110px;
-    text-align: center;
-  }
-  .info-section {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .card {
-    background-color: #e0f7fa;
-    border: 1px solid #FFFEFE;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px 0;
-    width: 90%;
-    max-width: 1200px;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-    text-align: center;
-  }
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  .info-section .card img {
-    max-width: 40%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  .card .leer-mas {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00796b;
-    color: #FFFEFE;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  .card .leer-mas:hover {
-    background-color: #004d40;
-  }
-  .imageno, .textno {
-    display: block;
-  }
-  main {
-    min-height: calc(100vh - 150px);
-    padding-bottom: 100px;
-    box-sizing: border-box;
-  }
-  .card:last-child {
-    display: none;
-  }
-}/*# sourceMappingURL=index.css.map */
+.login-form .forgot-password {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+}/*# sourceMappingURL=login.css.map */
