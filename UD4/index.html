@@ -44,8 +44,39 @@
     </nav>
     <main>
         <aside>
-            <button><span class="material-symbols-outlined">accessibility_new</span></button>
+            <button id="accessibility-icon" onclick="toggleAccessibilityMenu()">
+                <span class="material-symbols-outlined">accessibility_new</span>
+            </button>
+            <div id="accessibility-menu" class="accessibility-menu" style="display: none;">
+                <h3>Accessibilitat</h3>
+                <div class="contrast-settings">
+                    <h4>Contrast</h4>
+                    <button onclick="setContrast('grayscale')">Escala de grisos</button>
+                    <button onclick="setContrast('dark')">Alt contrast fosc</button>
+                    <button onclick="setContrast('light')">Alt contrast clar</button>
+                    <button onclick="setContrast('high-saturation')">Alta saturació</button>
+                    <button onclick="setContrast('low-saturation')">Baixa saturació</button>
+                </div>
+                <div class="font-settings">
+                    <h4>Configuració de font</h4>
+                    <label for="font-size">Mida de la font</label>
+                    <input type="range" id="font-size" min="0.8" max="2" step="0.1" value="1" oninput="setFontSize(this.value)">
+                    
+                    <label for="line-spacing">Espai entre línies</label>
+                    <input type="range" id="line-spacing" min="1" max="2" step="0.1" value="1.5" oninput="setLineSpacing(this.value)">
+                    
+                    <label for="word-spacing">Espai entre paraules</label>
+                    <input type="range" id="word-spacing" min="0" max="1" step="0.1" value="0" oninput="setWordSpacing(this.value)">
+                    
+                    <label for="letter-spacing">Espai entre lletres</label>
+                    <input type="range" id="letter-spacing" min="0" max="1" step="0.1" value="0" oninput="setLetterSpacing(this.value)">
+                </div>
+                <button onclick="toggleAccessibilityMenu()" id="close-accessibility-menu">Tancar</button>
+            </div>
         </aside>
+        
+        
+        
         <div class="image-container">
             <div class="sketchfab-embed-wrapper"> 
                 <iframe title="Blue whale skeleton" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="600px" src="https://sketchfab.com/models/8502dbef80ed4aa688c13c90cb14de73/embed?autospin=1&autostart=1&transparent=1"> 
@@ -102,5 +133,6 @@
         <p>&copy; 2024 La Balena Blava. Luca Seguí </p>
     </footer>
     <script src="/DIW/UD4/js/menu.js"></script>
+    <script src="/DIW/UD4/js/accessibility.js"></script>
 </body>
 </html>

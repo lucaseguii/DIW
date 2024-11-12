@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import 'accessibility.css';
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap");
 .footer-button {
   display: flex;
@@ -200,6 +200,7 @@ h1 {
 aside {
   position: fixed;
   bottom: 70px;
+  left: 20px;
 }
 
 aside button {
@@ -215,10 +216,10 @@ aside button {
 }
 
 aside button:hover {
-  background-color: #2980b9; /* Color de fondo cuando se pasa el ratón */
-  color: #333333; /* Color del texto cuando se pasa el ratón */
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  background-color: #2980b9;
+  color: #333333;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 600px) {
@@ -295,6 +296,10 @@ aside button:hover {
     display: none;
   }
 }
+main {
+  margin-bottom: 50px;
+}
+
 .portfolio-container {
   padding: 20px;
   background-color: #d2eef5;

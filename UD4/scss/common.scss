@@ -1,5 +1,6 @@
 @import 'variables.scss';
 @import 'footer.scss';
+@import 'accessibility.css';
 //afegir codig 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
@@ -168,11 +169,14 @@ h1{
 .menu.active {
   height: 50%; 
 }
+
 aside {
     position: fixed;
     bottom: 70px;
+    left: 20px;
 }
-aside button{
+
+aside button {
     background-color: $buttonsbg;
     color: $blackgrey;
     border: none;
@@ -183,12 +187,14 @@ aside button{
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 aside button:hover {
     background-color: #2980b9;
     color: $blackgrey;
     transform: scale(1.05); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+
 
 @media (min-width: 600px) {
     header {
@@ -274,5 +280,5 @@ aside button:hover {
     }
     #menu-options > h1{
         display: none;
-      }
+    }
 }
