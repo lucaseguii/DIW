@@ -1,0 +1,46 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'accessibility.css';
+//afegir codig 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+aside {
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
+}
+
+aside button {
+    background-color: $buttonsbg;
+    color: $blackgrey;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+aside button:hover {
+    background-color: #2980b9;
+    color: $blackgrey;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+    // .header-top {
+    //     display: flex; 
+    //     justify-content: space-between; 
+    //     align-items: center; 
+    //     padding: 5px 50px; 
+    // }
+
+    // .logo {
+    //     padding-top: 10px;
+    //     margin-left: 0;
+    //     flex-grow: 1; 
+    // }
