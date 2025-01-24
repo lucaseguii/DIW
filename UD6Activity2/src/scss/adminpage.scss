@@ -1,0 +1,36 @@
+@import 'common.scss';
+.secadminpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    background-color: $mainbg; 
+    padding: 20px;
+    min-height: 100vh;
+}
+#user-management, #news-management{
+    margin-bottom: 50px;
+}
+
+#add-news, #add-user, #add-file{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #38AECC;
+    color: $blackgrey;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#add-news:hover, #add-user:hover, #add-file:hover{
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+button a {
+    text-decoration: none;
+}

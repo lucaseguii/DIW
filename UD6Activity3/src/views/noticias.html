@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../tailwind/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=accessibility_new" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/DIW/UD6Activity3/src/scss/common.css">
+  <link rel="stylesheet" href="/DIW/UD6Activity3/src/css/noticies.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <title>Notícies</title>
+</head>
+
+<body>
+  <header>
+    <img src="/DIW/UD6Activity3/src/img/logo.png" alt="Logo">
+    <div class="header-top">
+      <div class="menu-icon" id="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1>LA BALENA BLAVA</h1>
+      <a href="/DIW/UD6Activity3/src/views/login.html"><button class="login-button">Iniciar Sessió</button></a>
+    </div>
+  </header>
+
+  <nav class="menu" id="menu">
+    <ul class="menu-options" id="menu-options">
+      <h1>MENÚ</h1>
+      <li><a href="/DIW/UD6Activity3/src/index.html">Inici</a></li>
+      <li><a href="/DIW/UD6Activity3/src/views/historia.html">Història</a></li>
+      <li><a href="/DIW/UD6Activity3/src/views/portafolio.html">Portafoli</a></li>
+      <li><a href="/DIW/UD6Activity3/src/views/noticias.html">Notícies</a></li>
+      <li>
+        <a href="#around" class="submenu-toggle">Al voltant de la balena</a>
+        <ul class="submenu">
+          <li><a href="/DIW/UD6Activity3/src/views/fitxestecniques.html">Fitxes tècniques</a></li>
+          <li><a href="/DIW/UD6Activity3/src/views/altresacts.html">Altres activitats</a></li>
+        </ul>
+      </li>
+      <li><a href="/DIW/UD6Activity3/src/views/adminpage.html">Admin Page</a></li>
+    </ul>
+  </nav>
+
+  <main class="bg-main h-auto mb-6">
+    <aside>
+      <button id="accessibility-icon" onclick="toggleAccessibilityMenu()">
+        <span class="material-symbols-outlined">accessibility_new</span>
+      </button>
+      <div id="accessibility-menu" class="accessibility-menu" style="display: none;">
+        <h3>Accessibilitat</h3>
+        <div class="contrast-settings">
+          <h4>Contrast</h4>
+          <button onclick="setContrast('grayscale')">Escala de grisos</button>
+          <button onclick="setContrast('dark')">Alt contrast fosc</button>
+          <button onclick="setContrast('light')">Alt contrast clar</button>
+          <button onclick="setContrast('high-saturation')">Alta saturació</button>
+          <button onclick="setContrast('low-saturation')">Baixa saturació</button>
+        </div>
+        <div class="font-settings">
+          <h4>Configuració de font</h4>
+          <label for="font-size">Mida de la font</label>
+          <input type="range" id="font-size" min="0.8" max="2" step="0.1" value="1" oninput="setFontSize(this.value)">
+          
+          <label for="line-spacing">Espai entre línies</label>
+          <input type="range" id="line-spacing" min="1" max="2" step="0.1" value="1.5" oninput="setLineSpacing(this.value)">
+          
+          <label for="word-spacing">Espai entre paraules</label>
+          <input type="range" id="word-spacing" min="0" max="1" step="0.1" value="0" oninput="setWordSpacing(this.value)">
+          
+          <label for="letter-spacing">Espai entre lletres</label>
+          <input type="range" id="letter-spacing" min="0" max="1" step="0.1" value="0" oninput="setLetterSpacing(this.value)">
+        </div>
+        <button onclick="toggleAccessibilityMenu()" id="close-accessibility-menu">Tancar</button>
+      </div>
+    </aside>
+
+    <h1 class="text-4xl font-semibold text-center p-6 m-0 font-montserrat">NOTÍCIES</h1>
+   
+    <div id="news-detail-container" class="p-10"></div>
+    
+    <div class="container mb-6">
+      <a href="/DIW/UD6Activity3/src/views/news_editor.html">
+        <button class="login-create-button">Crear Notícia</button>
+      </a>
+    </div>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
+    </div>
+    <div id="news-container" class="news-container"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 La Balena Blava. Luca Seguí</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script> 
+  <script src="/DIW/UD6Activity3/src/js/menu.js"></script>
+  <script src="/DIW/UD6Activity3/src/js/accessibility.js"></script>
+  <script src="/DIW/UD6Activity3/src/js/news_editor.js"></script>   
+  <script src="/DIW/UD6Activity3/src/js/noticias.js"></script> 
+
+</body>
+
+</html>
