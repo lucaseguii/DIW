@@ -21,4 +21,97 @@ button.login-create-button {
     display: flex;
     justify-content: flex-end; 
   }
+
+  #news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
   
+  .news-item {
+    display: block;
+  }
+  
+  .news-link {
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Estilo de la tarjeta de la noticia */
+  .news-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Título de la noticia */
+  .news-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Descripción de la noticia */
+  .news-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Imagen de la noticia */
+  .news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Agregar un hover para mejorar la interacción */
+  .news-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para los botones */
+  button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  button i {
+    margin-right: 5px;
+  }
+  
+  /* Estilo para el botón de eliminar */
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  /* Estilo para el botón de editar */
+  .edit-btn {
+    background-color: #28a745;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }

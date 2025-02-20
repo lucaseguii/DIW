@@ -47,9 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Mostrar mensaje de éxito y redirigir
         if (messageDiv) {
+
             setTimeout(() => {
                 window.location.href = "/DIW/UD6Activity3/src/views/adminpage.html";
             }, 1500);
+
             messageDiv.textContent = "Contrasenya canviada correctament. Redirigint...";
             messageDiv.style.color = "green";
         }

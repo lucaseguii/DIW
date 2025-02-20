@@ -15,6 +15,8 @@
       <h3>Toolbox</h3>
       <div class="tool" data-type="paragraph" id="paragraph-tool" name="paragraph-tool">Párrafo</div>
       <div class="tool" data-type="image" id="image-tool" name="image-tool">Imagen</div>
+      <div class="tool" data-type="paragraph">Párrafo</div>
+      <div class="tool" data-type="image">Imagen</div>
     </div>
 
     <div id="builder">
@@ -36,10 +38,32 @@
     <button id="load-config" name="load-config">Cargar Configuración</button>
 
     <button id="publish-post" class="publish-button" name="publish-post">Publicar</button>
+          <textarea id="news-title" placeholder="Escribe el título aquí..."></textarea>
+        </div>
+
+        <h3>Descripción de la noticia</h3 >
+        <div class="description-container">
+          <textarea id="news-description" placeholder="Escribe la descripción aquí..."></textarea>
+        </div>
+        
+      <div class="row-container"></div>
+    </div>
+
+    <label for="column-choice">Número de columnas por fila:</label>
+    <select id="column-choice">
+      <option value="1">1 columna</option>
+      <option value="2">2 columnas</option>
+    </select>
+    <button id="add-row">Añadir Fila</button>
+    <button id="save-config">Guardar Configuración</button>
+    <button id="load-config">Cargar Configuración</button>
+
+    <button id="publish-post" class="publish-button">Publicar</button>
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha384-SStJQoPipVtHHnIgUfDI+jTAbSyU+HMbhwt2XRRNpLIRFg9VguopT6Y4+cdOlkqg" crossorigin="anonymous"></script>
     <script src="/DIW/UD6Activity3/src/js/news_editor.js"></script>
+
 
 </body>
 </html>

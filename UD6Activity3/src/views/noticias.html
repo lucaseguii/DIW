@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/DIW/UD6Activity3/src/scss/common.css">
   <link rel="stylesheet" href="/DIW/UD6Activity3/src/css/noticies.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
   <title>Notícies</title>
 </head>
 
@@ -46,6 +49,7 @@
 
   <main class="bg-main h-auto mb-6">
 
+
     <aside>
       <button id="accessibility-icon" onclick="toggleAccessibilityMenu()">
         <span class="material-symbols-outlined">accessibility_new</span>
@@ -79,8 +83,9 @@
     </aside>
 
     <h1 class="text-4xl font-semibold text-center p-6 m-0 font-montserrat">NOTÍCIES</h1>
+   
+    <div id="news-detail-container" class="p-10"></div>
     
- 
     <div class="container mb-6">
       <a href="/DIW/UD6Activity3/src/views/news_editor.html">
         <button class="login-create-button">Crear Notícia</button>
@@ -134,6 +139,10 @@
         </div>
       </a>
     </div>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
+    </div>
+    <div id="news-container" class="news-container"></div>
   </main>
 
   <footer>
@@ -147,6 +156,13 @@
   <script src="/DIW/UD6Activity3/src/js/accessibility.js"></script>
   <script src="/DIW/UD6Activity3/src/js/news_editor.js"></script> 
   <script src="/DIW/UD6Activity3/src/js/loginstatus.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script> 
+  <script src="/DIW/UD6Activity3/src/js/menu.js"></script>
+  <script src="/DIW/UD6Activity3/src/js/accessibility.js"></script>
+  <script src="/DIW/UD6Activity3/src/js/news_editor.js"></script>   
+  <script src="/DIW/UD6Activity3/src/js/noticias.js"></script> 
 
 </body>
 

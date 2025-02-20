@@ -34,6 +34,8 @@ $(document).ready(function () {
             <section id="news-management">
                 <h3>Gestió de notícies</h3>
                 <button id="add-news"><a href="/DIW/UD6Activity3/src/views/news_editor.html">Afegir Notícia</a></button>
+
+                <button id="add-news"><a href="/DIW/UD6Activity3/src/views/afegirnoticies.html">Afegir Notícia</a></button>
                 <div id="news-list"></div>
             </section>` : ''}
 

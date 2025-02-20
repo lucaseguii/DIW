@@ -31,6 +31,7 @@ body > main > form > label:nth-child(8) > input[type=radio]{
 .newuser-button:hover{
     background-color: #2980b9;
     transform: scale(1.05);
+
 }
 
 .lista-usuarios{
@@ -45,4 +46,5 @@ table{
 }
 .td-users{
     padding: 55px;
+
 }
