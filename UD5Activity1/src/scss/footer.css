@@ -1,0 +1,31 @@
+.footer-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.footer-button button {
+  background-color: #38AECC;
+  color: #FFFEFE;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.footer-button button:hover {
+  background-color: #38AECC;
+}
+
+footer {
+  background-color: #003366;
+  color: #FFFEFE;
+  height: 50px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}/*# sourceMappingURL=footer.css.map */

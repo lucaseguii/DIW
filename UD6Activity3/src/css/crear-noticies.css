@@ -1,0 +1,158 @@
+/* Estilos generales del body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de la caja principal */
+.bg-main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Estilo de la toolbox */
+.toolbox {
+    background-color: #f4f4f4; /* No tocar */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.toolbox h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.toolbox .tool {
+    background-color: #e0e0e0; /* No tocar */
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.toolbox .tool:hover {
+    background-color: #ccc;
+}
+
+/* Estilo del área de construcción (builder) */
+#builder {
+    margin-top: 20px;
+}
+
+.row-container {
+    margin-bottom: 20px;
+}
+
+/* Estilo de las columnas */
+.column {
+    width: 100%;
+    min-height: 100px;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    background-color: #fafafa; /* No tocar */
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column.half {
+    width: 48%;
+}
+
+/* Estilos para los elementos dentro de las columnas */
+.element {
+    padding: 10px;
+    background-color: #d4edda; /* No tocar */
+    border: 1px solid #c3e6cb; /* No tocar */
+    cursor: move;
+}
+
+.element p {
+    margin: 0;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    width: 100%;
+}
+
+.element img {
+    max-width: 100%;
+}
+
+/* Estilo para el botón de eliminar fila */
+.delete-row-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #e74c3c; /* No tocar */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.delete-row-btn:hover {
+    background-color: #c0392b; /* No tocar */
+}
+
+/* Estilos para los botones principales y los selectores */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+select, button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #3498db; /* No tocar */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #2980b9; /* No tocar */
+}
+
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .column.half {
+        width: 100%;
+    }
+
+    .toolbox {
+        padding: 10px;
+    }
+
+    .tool {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 5px 0;
+    }
+}
