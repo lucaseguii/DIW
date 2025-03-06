@@ -45,7 +45,7 @@ $(document).ready(function () {
         try {
             const newsDocRef = doc(db, "news", newsId);
             await deleteDoc(newsDocRef);
-            console.log("🗑️ Noticia eliminada correctamente de Firestore");
+            console.log("Noticia eliminada correctamente de Firestore");
 
             $(`#news-${newsId}`).remove();
         } catch (error) {

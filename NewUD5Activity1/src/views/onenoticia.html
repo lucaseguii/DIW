@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../tailwind/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=accessibility_new" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/DIW/NewUD5Activity1/src/scss/common.css">
+    <title>Notícia</title>
+</head>
+<body>
+    <header>
+        <img src="/DIW/NewUD5Activity1/src/img/logo.png" alt="Logo">
+        <div class="header-top">
+            <div class="menu-icon" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>LA BALENA BLAVA</h1>
+            <a id="login-link" href="/DIW/NewUD5Activity1/src/views/login.html">
+                <button id="login-button" class="login-button">Iniciar Sessió</button>
+            </a>
+            <p id="user-status"></p></div>
+        </header>
+
+    <nav class="menu" id="menu">
+        <ul class="menu-options" id="menu-options">
+            <h1>MENÚ</h1>
+            <li><a href="/DIW/NewUD5Activity1/src/index.html">Inici</a></li>
+            <li><a href="/DIW/NewUD5Activity1/src/views/historia.html">Història</a></li>
+            <li><a href="/DIW/NewUD5Activity1/src/views/portafolio.html">Portafoli</a></li>
+            <li><a href="/DIW/NewUD5Activity1/src/views/noticias.html">Notícies</a></li>
+            <li>
+                <a href="#around" class="submenu-toggle">Al voltant de la balena</a>
+                <ul class="submenu">
+                    <li><a href="/DIW/NewUD5Activity1/src/views/fitxestecniques.html">Fitxes tècniques</a></li>
+                    <li><a href="/DIW/NewUD5Activity1/src/views/altresacts.html">Altres activitats</a></li>
+                </ul>
+            </li>
+            <li><a href="/DIW/NewUD5Activity1/src/views/adminpage.html">Admin Page</a></li>
+        </ul>
+    </nav>
+    <main class="bg-main h-auto mb-5">
+        <aside>
+            <button id="accessibility-icon" onclick="toggleAccessibilityMenu()">
+                <span class="material-symbols-outlined">accessibility_new</span>
+            </button>
+            <div id="accessibility-menu" class="accessibility-menu" style="display: none;">
+                <h3>Accessibilitat</h3>
+                <div class="contrast-settings">
+                    <h4>Contrast</h4>
+                    <button onclick="setContrast('grayscale')">Escala de grisos</button>
+                    <button onclick="setContrast('dark')">Alt contrast fosc</button>
+                    <button onclick="setContrast('light')">Alt contrast clar</button>
+                    <button onclick="setContrast('high-saturation')">Alta saturació</button>
+                    <button onclick="setContrast('low-saturation')">Baixa saturació</button>
+                </div>
+                <div class="font-settings">
+                    <h4>Configuració de font</h4>
+                    <label for="font-size">Mida de la font</label>
+                    <input type="range" id="font-size" min="0.8" max="2" step="0.1" value="1" oninput="setFontSize(this.value)">
+                    
+                    <label for="line-spacing">Espai entre línies</label>
+                    <input type="range" id="line-spacing" min="1" max="2" step="0.1" value="1.5" oninput="setLineSpacing(this.value)">
+                    
+                    <label for="word-spacing">Espai entre paraules</label>
+                    <input type="range" id="word-spacing" min="0" max="1" step="0.1" value="0" oninput="setWordSpacing(this.value)">
+                    
+                    <label for="letter-spacing">Espai entre lletres</label>
+                    <input type="range" id="letter-spacing" min="0" max="1" step="0.1" value="0" oninput="setLetterSpacing(this.value)">
+                </div>
+                <button onclick="toggleAccessibilityMenu()" id="close-accessibility-menu">Tancar</button>
+            </div>
+        </aside>
+
+        <h1 class="text-4xl font-semibold text-center p-6 m-0 font-montserrat">Notícia X</h1>
+        <div class="p-8">
+        
+          <p class="text-gray-700 font-roboto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis modi nam dicta. Pariatur at nostrum similique sit, maiores provident reiciendis voluptatem aspernatur nihil cupiditate. Autem, vero! Error libero omnis culpa? Aliquam, porro esse, dolores eos vero ratione quas suscipit reiciendis, alias quibusdam deleniti doloribus dolorum in sapiente est iste.
+          </p>
+        
+          <div class="flex items-center">
+            <img src="/DIW/NewUD5Activity1/src/img/news1.jpg" alt="Imagen Notícia 1" class="w-50 h-80 mr-6">
+            <p class="text-gray-700 font-roboto">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet optio vero tenetur consequatur molestiae deserunt. Tempore aspernatur eum incidunt voluptates, labore reiciendis in nulla perspiciatis provident. Accusamus corporis fugit ea.
+              Commodi tempora incidunt suscipit totam rem voluptatibus tempore magni inventore ipsam, doloremque maiores aliquid optio sed placeat quis unde modi perferendis illo eos sint? Optio officiis est culpa repellat dolores.
+              </p>
+          </div>
+        
+          <div class="flex flex-row-reverse items-center">
+            <img src="/DIW/NewUD5Activity1/src/img/news1.jpg" alt="Imagen Notícia 2" class="w-50 h-80 mr-6">
+            <p class="text-gray-700 font-roboto">
+              Similique ipsum architecto minus! Eos, tempore minima? Consequatur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti similique consequuntur quae repudiandae? Consectetur ex dignissimos pariatur, cum tempora minima non dicta accusantium ut quos similique, corporis vel sed ad!
+              Similique, maiores nisi. Eveniet quod iure quaerat atque laborum, saepe nam accusamus nobis, voluptate natus similique praesentium a doloribus quam. Similique distinctio ut et consectetur vitae fugiat voluptatem tempore? Exercitationem.
+             </p>
+          </div>
+        
+          <p class="text-gray-700 mb-6 font-roboto">
+            Maiores perspiciatis tempora nihil? Saepe harum sapiente id nostrum cumque distinctio quisquam consequatur nam, fugit dolore hic ducimus perferendis voluptate in enim, dicta, neque iusto optio modi error deserunt. Sequi aspernatur, aliquam doloremque deserunt itaque consectetur debitis quisquam?
+          </p>
+        
+          <div class="flex items-center mb-1">
+            <img src="/DIW/NewUD5Activity1/src/img/news1.jpg" alt="Imagen Notícia 3" class="w-50 h-80 mr-6">
+            <p class="text-gray-700 font-roboto">
+              Expedita mollitia soluta corrupti ut nulla, minima, modi asperiores, doloremque Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque iusto voluptates voluptatibus laborum doloribus voluptatem cum, unde quidem ipsa consequatur accusantium tempora cupiditate voluptatum voluptas inventore dolorem dolores recusandae consequuntur.
+              Laborum, corrupti. Eius exercitationem delectus quis quaerat. Amet id nemo sint magni libero ad voluptatibus odio possimus minima! Minima voluptatum esse natus cumque provident architecto repellendus, impedit laborum vitae nulla.
+           </p>
+          </div>
+        </div>
+        
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 La Balena Blava. Luca Seguí</p>
+    </footer>
+
+    <script src="/DIW/NewUD5Activity1/src/js/menu.js"></script>
+    <script src="/DIW/NewUD5Activity1/src/js/accessibility.js"></script>
+
+</body>
+</html>

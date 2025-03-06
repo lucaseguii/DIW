@@ -32,10 +32,7 @@ async function createAdminUser() {
             .then(async (userCredential) => {
                 const user = userCredential.user;
 
-                await setDoc(adminRef, {
-                    ...adminUser,
-                    uid: user.uid, 
-                });
+                await setDoc(adminRef, {...adminUser,uid: user.uid, });
 
                 console.log("Usuario admin creado correctamente en Firebase Authentication y Firestore.");
             })

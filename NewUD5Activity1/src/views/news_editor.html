@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Editor</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">    
+    <link rel="stylesheet" href="/DIW/NewUD5Activity1/src/css/news_editor.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="module" src="/DIW/NewUD5Activity1/src/js/news_editor.js"></script>
+    <link rel="stylesheet" href="/DIW/NewUD5Activity1/src/scss/adminpage.css"> 
+    <link rel="stylesheet" href="/DIW/NewUD5Activity1/src/css/adminpage.css">
+</head>
+<body style="margin: 0; width: 100%;">
+    <header>
+        <img src="/DIW/NewUD5Activity1/src/img/logo.png" alt="Logo">
+        <div class="header-top">
+            <div class="menu-icon" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>LA BALENA BLAVA</h1>
+            <a id="login-link" href="/DIW/NewUD5Activity1/src/views/login.html">
+                <button id="login-button" class="login-button">Iniciar Sessió</button>
+            </a>
+        </div>
+    </header>
+
+    <nav class="menu" id="menu">
+        <ul class="menu-options" id="menu-options">
+            <h1>MENÚ</h1>
+            <li><a href="/DIW/NewUD5Activity1/src/index.html">Inici</a></li>
+            <li><a href="/DIW/NewUD5Activity1/src/views/historia.html">Història</a></li>
+            <li><a href="/DIW/NewUD5Activity1/src/views/portafolio.html">Portafoli</a></li>
+            <li><a href="/DIW/NewUD5Activity1/src/views/noticias.html">Notícies</a></li>
+            <li>
+                <a href="#around" class="submenu-toggle">Al voltant de la balena</a>
+                <ul class="submenu">
+                    <li><a href="/DIW/NewUD5Activity1/src/views/fitxestecniques.html">Fitxes tècniques</a></li>
+                    <li><a href="/DIW/NewUD5Activity1/src/views/altresacts.html">Altres activitats</a></li>
+                </ul>
+            </li>
+            <li><a href="/DIW/NewUD5Activity1/src/views/adminpage.html">Admin Page</a></li>
+        </ul>
+    </nav>
+<body>
+  <main>
+  <h1>Post Editor</h1>
+  <label for="news-title">Título de la noticia:</label>
+  <input type="text" id="news-title" placeholder="Título">
+  
+  <div class="toolbox">
+    <h3>Toolbox</h3>
+    <div class="tool" data-type="paragraph">Párrafo</div>
+    <div class="tool" data-type="image">Imagen</div>
+  </div>
+
+  <div id="builder">
+    <div class="row-container"></div>
+  </div>
+  
+  <label for="column-choice">Número de columnas por fila:</label>
+  <select id="column-choice">
+    <option value="1">1 columna</option>
+    <option value="2">2 columnas</option>
+  </select>
+  <button id="add-row">Añadir Fila</button>
+  <button id="save-config">Guardar Configuración</button>
+  <button id="load-config">Cargar Configuración</button>
+  <button id="publish-news" style="background-color:green">Publicar</button> 
+  </main>
+  <footer>
+    <p>&copy; 2024 La Balena Blava. Luca Seguí</p>
+</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+  
+  <script type="module" src="/DIW/NewUD5Activity1/src/firebase/firebase.js"></script>
+</body>
+</html>

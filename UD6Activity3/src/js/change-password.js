@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         setTimeout(() => {
-            window.location.href = "/DIW/UD6Activity3/src/views/canviarfirstpass.html";
+            window.location.href = "/DIW/UD6Activity3/src/views/adminpage.html";
         }, 1500);
         
     });
